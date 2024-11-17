@@ -1,28 +1,28 @@
 # src/my_module.py
 
-# Привітання
+# Greeting
 def greet(name):
-    return f"Привіт, {name}!"
+    return f"Hello, {name}!"
 
-# Функція для перевірки парності числа
+# Function to check if a number is even
 def is_even(number):
     return number % 2 == 0
 
-# Основна частина програми
+# Main part of the program
 if __name__ == "__main__":
-    name = input("Введіть ваше ім'я: ")
+    name = input("Enter your name: ")
     print(greet(name))
 
-    # Введення числа
-    number = int(input("Введіть число: "))
+    # Input a number
+    number = int(input("Enter a number: "))
 
-    # Перевірка парності
+    # Check if the number is even
     if is_even(number):
-        print(f"{number} - парне число.")
+        print(f"{number} is an even number.")
     else:
-        print(f"{number} - непарне число.")
+        print(f"{number} is an odd number.")
 
-    # Цикл для виведення чисел від 1 до 5
-    print("Числа від 1 до 5:")
+    # Loop to print numbers from 1 to 5
+    print("Numbers from 1 to 5:")
     for i in range(1, 6):
         print(i)
